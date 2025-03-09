@@ -92,7 +92,7 @@ onMounted(() => {
 }
 
 .appBtn {
-  @apply relative inline-flex cursor-pointer select-none items-center gap-1 rounded-md px-4 py-2.5 text-sm opacity-100 transition-all w-fit justify-center bg-white border border-white;
+  @apply relative inline-flex cursor-pointer select-none items-center gap-1 rounded-md px-4 py-2.5 text-sm opacity-100 transition-all justify-center bg-white border border-white text-neutral-950;
 
   & > .appBtn-icon {
     @apply size-5;
