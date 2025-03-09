@@ -15,12 +15,12 @@ export default defineNuxtConfig({
     mode: "svg",
   },
 
-  modules: ["@nuxt/icon", "@nuxtjs/supabase"],
-  supabase: {
-    redirectOptions: {
-      login: "/login",
-      callback: "/confirm",
-      exclude: ["/login", "/test"],
-    },
-  },
+  modules: ["@nuxt/icon"],
+  // supabase: {
+  //   redirectOptions: {
+  //     login: "/login",
+  //     callback: "/confirm",
+  //     exclude: ["/login", "/test"],
+  //   },
+  // },
 });
