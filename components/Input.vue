@@ -18,7 +18,7 @@ function onInput(event) {
 </script>
 
 <template>
-  <span class="appInput">
+  <span class="appInput focusable">
     <input placeholder="" type="text" :value="modelValue" @input="onInput" />
     <span
       v-if="placeholder.length"
@@ -34,14 +34,14 @@ function onInput(event) {
 @reference "../assets/css/main.postcss";
 
 .appInput {
-  @apply border rounded-md border-neutral-500 relative inline-block;
+  @apply border rounded-md border-neutral-600 relative inline-block transition-all;
 
   input {
     @apply text-white text-sm outline-none px-3 py-2.5 bg-transparent w-full;
   }
 
   .placeholder {
-    @apply absolute left-3 top-1/2 transform -translate-y-1/2 text-sm text-neutral-400 pointer-events-none transition-all opacity-100;
+    @apply absolute left-3 top-1/2 transform -translate-y-1/2 text-sm text-neutral-500 pointer-events-none transition-all opacity-100;
 
     &.has-value {
       @apply text-xs top-0 -translate-y-1/2 text-neutral-300;

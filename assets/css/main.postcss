@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
 html {
-  @apply bg-stone-950;
+  @apply bg-stone-950 font-[450];
   /* background-color: #292524; */
-  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    Roboto;
+  font-family: "PP Neue Montreal", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto;
 }
 
 @theme {
   --color-primary: #f3c614;
+}
+
+@layer elements {
+  .focusable {
+    @apply ring-1 ring-transparent ring-offset-2 ring-offset-neutral-950;
+    &:focus-within {
+      @apply ring-1 ring-white;
+    }
+  }
 }

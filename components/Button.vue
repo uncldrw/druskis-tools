@@ -30,7 +30,7 @@ onMounted(() => {
   <component
     :is="attrs.href ? 'a' : attrs.to ? 'router-link' : 'button'"
     :class="{
-      'appBtn variant-default': true,
+      'appBtn variant-default focusable': true,
       'appBtn-vertical': ['top', 'bottom'].includes(iconPos),
       'appBtn-horizontal': ['left', 'right'].includes(iconPos),
       appBtn__loading: loading,
@@ -92,7 +92,7 @@ onMounted(() => {
 }
 
 .appBtn {
-  @apply relative inline-flex cursor-pointer select-none items-center gap-1 rounded-md px-4 py-2.5 font-semibold text-sm opacity-100 transition-all w-fit justify-center bg-white border border-white;
+  @apply relative inline-flex cursor-pointer select-none items-center gap-1 rounded-md px-4 py-2.5 text-sm opacity-100 transition-all w-fit justify-center bg-white border border-white;
 
   & > .appBtn-icon {
     @apply size-5;
@@ -109,6 +109,9 @@ onMounted(() => {
   }
   &.appBtn__loading {
     @apply cursor-default opacity-90;
+  }
+  &:hover {
+    @apply bg-neutral-200 border-neutral-200;
   }
 }
 </style>
