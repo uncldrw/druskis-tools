@@ -1,12 +1,12 @@
 <script setup>
 const items = ref([
-  { title: "Home", icon: "mingcute:home-2-line", to: "/" },
-  { title: "Stats", icon: "mingcute:chart-bar-2-line", to: "/about" },
-  { title: "Library", icon: "mingcute:rows-2-line", to: "/" },
-  { title: "Share", icon: "mingcute:share-forward-line", to: "/contact" },
-  { title: "Communiny", icon: "mingcute:group-2-line", to: "/about" },
-  { title: "Files", icon: "mingcute:file-line", to: "/contact" },
-  { title: "Settings", icon: "mingcute:settings-5-line", to: "/contact" },
+  { title: "Home", icon: "ph:house-duotone", to: "/" },
+  { title: "Stats", icon: "ph:chart-bar-duotone", to: "/about" },
+  { title: "Library", icon: "ph:align-left-duotone", to: "/" },
+  { title: "Share", icon: "ph:share-duotone", to: "/contact" },
+  { title: "Communiny", icon: "ph:users-duotone", to: "/about" },
+  { title: "Files", icon: "ph:folder-simple-duotone", to: "/contact" },
+  { title: "Settings", icon: "ph:gear-duotone", to: "/contact" },
 ]);
 </script>
 
@@ -14,6 +14,11 @@ const items = ref([
   <aside class="sidebar">
     <div class="sidebar__container">
       <div class="sidebar__content">
+        <div
+          class="bg-stone-950 border-stone-700 aspect-square w-full rounded grid place-content-center"
+        >
+          <Icon name="ph:rocket-launch" class="size-5 text-indigo-400"></Icon>
+        </div>
         <ul class="sidebar__list">
           <template v-for="item in items">
             <li class="sidebar__item">
@@ -34,15 +39,15 @@ const items = ref([
 <style lang="postcss">
 @reference "../assets/css/main.postcss";
 .sidebar {
-  @apply w-14 h-full;
+  @apply w-12 h-full;
 }
 
 .sidebar__container {
-  @apply border p-2 bg-stone-800 border-stone-600/40 h-full rounded-lg;
+  @apply border p-2 bg-stone-900 border-stone-600/40 h-full rounded-lg;
 }
 
 .sidebar__content {
-  @apply py-0;
+  @apply py-0 grid gap-2;
 }
 
 .sidebar__list {
@@ -64,7 +69,7 @@ const items = ref([
 }
 
 .sidebar__icon {
-  @apply size-5 text-stone-400 transition-transform duration-100;
+  @apply size-4 text-stone-400 transition-transform duration-100;
 }
 
 .sidebar__item-flyout {
