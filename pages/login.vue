@@ -38,7 +38,14 @@
               ></label>
             </div>
             <div class="w-full mt-4">
-              <AppButton class="w-full bg-indigo-400">Anmelden</AppButton>
+              <AppButton class="w-full !bg-indigo-400 !border-indigo-400"
+                >Anmelden</AppButton
+              >
+            </div>
+            <div>
+              <button class="text-sm text-center w-full cursor-pointer">
+                Registrieren
+              </button>
             </div>
           </div>
         </div>
