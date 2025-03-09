@@ -34,6 +34,7 @@ const items = ref([
       </div>
     </div>
   </aside>
+  <div class="w-48 border-r border-stone-900"></div>
 </template>
 
 <style lang="postcss">
@@ -75,9 +76,11 @@ const items = ref([
 .sidebar__item-flyout {
   @apply bg-indigo-600 text-white absolute top-1/2 left-[calc(100%+0.5rem+5px)] -translate-y-1/2 px-2 py-1 rounded-md text-sm font-medium  transition-all duration-300 opacity-0;
   /* transform-origin: left; */
+  visibility: hidden;
 }
 
 .sidebar__item:hover .sidebar__item-flyout {
   @apply opacity-100 delay-200 duration-75;
+  visibility: visible;
 }
 </style>
