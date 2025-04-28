@@ -14,7 +14,7 @@
 @reference "../assets/css/main.postcss";
 
 main {
-  @apply bg-muted-200;
+  @apply bg-stone-200;
 }
 
 .dashboardLayout-content {

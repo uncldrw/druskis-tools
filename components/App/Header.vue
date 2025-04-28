@@ -1,5 +1,5 @@
 <template>
-  <header class="appHeader w-full bg-muted-200 min-h-22 max-h-22">
+  <header class="appHeader w-full bg-stone-200 min-h-22 max-h-22">
     <div class="appHeader-wrapper h-full">
       <div class="appHeader-container relative h-full">
         <div class="appHeader-logo">

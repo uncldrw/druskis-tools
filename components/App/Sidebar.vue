@@ -3,18 +3,19 @@ import jsonMenu from "@/content/header/menu.json";
 </script>
 
 <template>
-  <aside class="appSidebar h-full min-w-28 bg-muted-200">
+  <aside class="appSidebar h-full min-w-28 bg-stone-200">
     <div class="appSidebar-wrapper">
       <div class="appSidebar-container mt-[14rem]">
         <ul>
           <template v-for="menuItem in jsonMenu">
             <li class="aspect-square flex w-20 h-auto mx-auto">
               <span class="p-2 size-full">
-                <span
-                  class="size-full bg-muted-400 grid place-content-center rounded-full"
-                >
-                  <Icon :name="menuItem.icon" class="size-5 text-muted-50" />
-                </span>
+                <a class="buttonA">
+                  <Icon
+                    :name="menuItem.icon"
+                    class="size-5 text-muted-50 z-10"
+                  />
+                </a>
               </span>
             </li>
           </template>
@@ -23,3 +24,30 @@ import jsonMenu from "@/content/header/menu.json";
     </div>
   </aside>
 </template>
+
+<style lang="postcss" scoped>
+@reference "../../assets/css/main.postcss";
+.buttonA {
+  @apply size-full  grid place-content-center relative cursor-pointer;
+  &:after {
+    @apply rounded-full bg-neutral-400 size-full top-0 left-0 absolute;
+    content: "";
+    transition: all 0.1s ease-in-out;
+  }
+  &:hover:after {
+    animation: hoverAnim 0.1s ease-in-out;
+  }
+}
+
+@keyframes hoverAnim {
+  0% {
+    transform: scaleY(1) scaleX(1);
+  }
+  10% {
+    transform: scaleY(1) scaleX(1.2);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1) scale(1.15);
+  }
+}
+</style>

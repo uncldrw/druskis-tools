@@ -110,7 +110,7 @@ onMounted(() => {
     @apply cursor-default opacity-90;
   }
   &:hover {
-    @apply bg-neutral-200 border-neutral-200;
+    @apply bg-stone-200 border-stone-200;
   }
 }
 </style>
