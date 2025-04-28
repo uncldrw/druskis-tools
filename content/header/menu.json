@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Home",
+    "icon": "ph:house-fill",
+    "href": "/"
+  },
+  {
+    "label": "Tools & Apps",
+    "icon": "ph:screwdriver-fill",
+    "href": "/about"
+  },
+  {
+    "label": "Wiki & Notes",
+    "icon": "ph:notebook-fill",
+    "href": "/contact"
+  },
+  {
+    "label": "AI",
+    "icon": "ph:sparkle-fill",
+    "href": "/blog"
+  },
+  {
+    "label": "Settings",
+    "icon": "ph:gear-fill",
+    "href": "/services"
+  }
+]
