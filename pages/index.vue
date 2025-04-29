@@ -23,23 +23,7 @@ definePageMeta({
     <div class="bg-white p-8 rounded-3xl w-full col-span-1">
       <div class="py-48"></div>
     </div>
-    <div class="bg-white p-4 rounded-3xl w-full col-span-1">
-      <div
-        class="bg-after bg-gradient-to-bl from-cyan-500 to-blue-500 w-full rounded-xl min-h-24 p-4"
-      >
-        <div class="flex w-full justify-between text-xl text-white">
-          <h5>Paderborn</h5>
-          <Icon name="ph:cloud-sun" />
-        </div>
-        <div class="flex w-full justify-between text-xl text-white">
-          <span class="text-5xl">25°</span>
-          <div class="flex flex-col text-base text-right">
-            <span>Teils Bewölkt</span>
-            <span>H:27° T:18°</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <WidgetWeather />
   </div>
 </template>
 

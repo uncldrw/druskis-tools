@@ -35,19 +35,7 @@ import jsonMenu from "@/content/header/menu.json";
     transition: all 0.1s ease-in-out;
   }
   &:hover:after {
-    animation: hoverAnim 0.1s ease-in-out;
-  }
-}
-
-@keyframes hoverAnim {
-  0% {
-    transform: scaleY(1) scaleX(1);
-  }
-  10% {
-    transform: scaleY(1) scaleX(1.2);
-  }
-  100% {
-    transform: scaleY(1) scaleX(1) scale(1.15);
+    @apply bg-neutral-500;
   }
 }
 </style>

@@ -5,13 +5,18 @@
         <div class="appHeader-logo">
           <span class="size-full flex p-2">
             <span
-              class="h-full w-auto bg-transparent rounded-full grid place-content-center aspect-square mx-auto"
+              class="h-full w-auto bg-indigo-400 rounded-full grid place-content-center aspect-square mx-auto"
             >
-              <Icon name="ph:rocket-launch-fill" class="size-5" />
+              <Icon
+                name="ph:rocket-launch-fill"
+                class="size-9 text-indigo-700"
+              />
             </span>
           </span>
         </div>
-        <div class="w-full"></div>
+        <div class="w-full flex justify-center items-center h-full">
+          <AppSearchbar />
+        </div>
       </div>
     </div>
   </header>

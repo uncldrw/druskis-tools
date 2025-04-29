@@ -15,6 +15,17 @@ export default defineNuxtConfig({
     mode: "svg",
   },
 
+  runtimeConfig: {
+    // Private Schlüssel (nur serverseitig)
+    apiSecret: "",
+
+    // Öffentliche Schlüssel (client & server)
+    public: {
+      weatherApiKey: process.env.WEATHER_API_KEY,
+      weatherApiUrl: process.env.WEATHER_API_URL,
+    },
+  },
+
   modules: ["@nuxt/icon"],
   // supabase: {
   //   redirectOptions: {
