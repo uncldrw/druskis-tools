@@ -29,7 +29,7 @@ onMounted(() => {
 <template>
   <component
     :is="attrs.href ? 'a' : attrs.to ? 'router-link' : 'button'"
-    class="relative inline-flex cursor-pointer select-none items-center gap-1 rounded-md px-4 py-2.5 text-sm opacity-100 transition-all justify-center bg-white border border-white text-neutral-950"
+    class="relative inline-flex cursor-pointer select-none items-center gap-1 px-6 py-2.5 opacity-100 transition-all justify-center bg-white text-stone-900 min-h-16 min-w-16 rounded-4xl"
     :class="{
       'appBtn variant-default focusable': true,
       'appBtn-vertical': ['top', 'bottom'].includes(iconPos),
@@ -37,12 +37,12 @@ onMounted(() => {
       appBtn__loading: loading,
     }"
   >
-    <span :class="{ invisible: loading && !icon }">
+    <h6 :class="{ invisible: loading && !icon }">
       <span v-if="label">{{ label }}</span>
       <slot v-else>
         <span v-if="!slots.default && !icon"></span>
       </slot>
-    </span>
+    </h6>
     <transition name="appBtn-fade" mode="out-in">
       <template v-if="!loading && icon">
         <slot v-if="slots.icon" name="icon" />
@@ -110,7 +110,7 @@ onMounted(() => {
     @apply cursor-default opacity-90;
   }
   &:hover {
-    @apply bg-stone-200 border-stone-200;
+    @apply bg-stone-300;
   }
 }
 </style>

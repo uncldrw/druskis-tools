@@ -10,12 +10,12 @@ import jsonMenu from "@/content/header/menu.json";
           <template v-for="menuItem in jsonMenu">
             <li class="aspect-square flex w-20 h-auto mx-auto">
               <span class="p-2 size-full">
-                <a class="buttonA">
+                <NuxtLink :to="menuItem.href" class="buttonA">
                   <Icon
                     :name="menuItem.icon"
                     class="size-5 text-muted-50 z-10"
                   />
-                </a>
+                </NuxtLink>
               </span>
             </li>
           </template>

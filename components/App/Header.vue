@@ -14,9 +14,12 @@
             </span>
           </span>
         </div>
-        <div class="w-full flex justify-center items-center h-full">
-          <AppSearchbar />
+        <div class="w-full grid grid-col-3 h-full p-2">
+          <UserProfileDropdown class="col-start-3 place-self-end self-center" />
         </div>
+        <!-- <div class="w-full flex justify-center items-center h-full">
+          <AppSearchbar />
+        </div> -->
       </div>
     </div>
   </header>

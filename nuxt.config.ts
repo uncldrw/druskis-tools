@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/icon"],
+  modules: ["@nuxt/icon", "nuxt-swiper"],
   // supabase: {
   //   redirectOptions: {
   //     login: "/login",

@@ -7,37 +7,13 @@ definePageMeta({
 <template>
   <div class="pageLayout-index pb-2 pr-2 gap-2">
     <div class="flex">
-      <div class="bg-neutral-950 p-8 rounded-3xl w-full">
-        <div class="text-white">
-          <h3 class="font-semibold text-5xl mb-2">Willkommen, Jason!</h3>
-          <p class="text-neutral-500 text-lg">
-            Welche Idee kommt dir heute in den Sinn?
-          </p>
-        </div>
-      </div>
+      <h3 class="font-font text-7xl mb-2 flex">Tools</h3>
     </div>
-    <div class="bg-transparent p-8 rounded-3xl w-full col-span-3"></div>
-    <div class="bg-white p-8 rounded-3xl w-full col-span-2 bg-clock">
-      <div
-        class="bg-stone-500/60 backdrop-blur-sm inline-flex min-w-[calc(50%-4px)] px-4 py-2 min-h-1/2 rounded-lg"
-      >
-        <div class="">
-          <h6 class="text-5xl text-white mb-1">
-            09<span class="clock-dot">:</span>41
-          </h6>
-          <span class="text-white">Freitag, 2. Mai</span>
-        </div>
-      </div>
-    </div>
-    <div class="bg-white p-8 rounded-3xl w-full col-span-1">
-      <div class="py-48"></div>
-    </div>
-    <WidgetWeather />
   </div>
 </template>
 
 <style lang="postcss" scoped>
-@reference "../assets/css/main.postcss";
+@reference "../../assets/css/main.postcss";
 .bg-after {
   position: relative;
   z-index: 10;
